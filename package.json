@@ -1,0 +1,12 @@
+{
+  "name": "BotFrakir",
+  "version": "0.1.0",
+  "description": "Bot Discord V1",
+  "main": "main.js",
+  "repository": "https://github.com/Frakir59/BotDiscord.git",
+  "author": "Frakir59 <frakir.fps.tv@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "discordjs/discord.js"
+  }
+}
