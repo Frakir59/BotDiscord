@@ -1,7 +1,7 @@
 {
   "name": "BotFrakir",
-  "version": "0.1.0",
-  "description": "Bot Discord V1",
+  "version": "0.1.1",
+  "description": "Bot Discord V0.1.1",
   "main": "main.js",
   "repository": "https://github.com/Frakir59/BotDiscord.git",
   "author": "Frakir59 <frakir.fps.tv@gmail.com>",
@@ -19,7 +19,8 @@
       "linebreak-style" : ["error", "windows"],
       "quotes" : ["warn", "double"],
       "indent" : ["off"],
-      "curly": "off"
+      "curly": "off",
+      "no-trailing-spaces": "off"
     }
   }
 }

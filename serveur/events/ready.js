@@ -1,2 +1,4 @@
 // Message au lancement du bot
-client.on("ready", () => { console.log("Bot DISCORD Frakir V0.1.0 : chargé"); });
+module.exports = () => {
+  console.log("Bot DISCORD Frakir Version 0.1.1");
+};
