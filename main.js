@@ -7,10 +7,12 @@ console.log("Chargement du bot...");
 // On décalre le PREFIX dans le client pour ne pas rappeler le fichier
 client.PREFIX = PREFIX;
 
-// Création des commandes 
+// Création de la collection de commandes 
 client.commands = new Collection();
 client.commands.set("roles", require("./serveur/commands/roles.js"));
 client.commands.set("serveurinfo", require("./serveur/commands/serveurInfo.js"));
+// Mise en place de l'API tracker Apex legends 
+client.commands.set("apex", require("./serveur/commands/API.js"));
 
 // Lancement des evenements
 client.on("ready", () => require("./serveur/events/ready.js")(client));

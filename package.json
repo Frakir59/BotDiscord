@@ -7,7 +7,10 @@
   "author": "Frakir59 <frakir.fps.tv@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "discordjs/discord.js"
+    "discord.js": "discordjs/discord.js",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
@@ -15,10 +18,18 @@
   },
   "eslintConfig": {
     "extends": "aqua/node",
-    "rules" : {
-      "linebreak-style" : ["error", "windows"],
-      "quotes" : ["warn", "double"],
-      "indent" : ["off"],
+    "rules": {
+      "linebreak-style": [
+        "error",
+        "windows"
+      ],
+      "quotes": [
+        "warn",
+        "double"
+      ],
+      "indent": [
+        "off"
+      ],
       "curly": "off",
       "no-trailing-spaces": "off"
     }
