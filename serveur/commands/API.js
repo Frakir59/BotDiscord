@@ -1,29 +1,26 @@
-// Exemple de traitement d'une API
-const fetch = require("node-fetch");
-const { MessageEmbed } = require("discord.js");
-
-module.exports = async (client, message, args) => {
+// API tracker APEX Legends
+module.exports = (client, message, args) => {
   const express = require("express");
   const morgan = require("morgan");
   const dotenv = require("dotenv");
 
-  // Lecture du port 5000
+  // Appel du fichier config de l'API APEX 
+  dotenv.config({ path: "./config.env" });
   const app = express();
-  app.listen(5000, () => {
-    console.log("Connection au port 5000 de l'API APEX");
+
+  if (process.env.NODE_ENV === "API_APEX") {
+    app.use(morgan("dev"));
+  }
+  // Profile
+  app.use("/api/v1/profile", require("./apexlegends/profile"));
+
+  // On définie le port de connexion
+  const port = process.env.PORT || 8000;
+
+   // Lecture du port 5000
+  app.listen(port, () => {
+    console.log(`${process.env.NODE_ENV} fonctionne sur le port: ${port}`);
   });
 
-  if (args[0] === "apex") {
-    if (args[1] === "pc" || args[1] === "PC") {
-      const platform = "5";
-    } 
-    
-    if (args[1] === "xbox" || args[1] === "XBOX") { 
-      const platform = "1";
-    }
-
-    if (args[1] === "psn" || args[1] === "PSN") {
-
-    }
-  }
+  // 
 };
