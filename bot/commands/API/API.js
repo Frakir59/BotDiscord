@@ -1,5 +1,5 @@
 // API tracker APEX Legends
-module.exports = (client, message, args) => {
+module.exports = (client, message) => {
   const express = require("express");
   const morgan = require("morgan");
   const dotenv = require("dotenv");
@@ -12,7 +12,7 @@ module.exports = (client, message, args) => {
     app.use(morgan("dev"));
   }
   // Profile
-  app.use("/api/v1/profile", require("../apexlegends/profile"));
+  app.use("/api/v1/profile", require("./apexlegends/profile"));
 
   // On définie le port de connexion
   const port = process.env.PORT || 8000;

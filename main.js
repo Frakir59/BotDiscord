@@ -16,7 +16,7 @@ client.commands_user = new Collection();
 // Commande Serveur infos
 client.commands_user.set("serveurinfo", require("./bot/commands/user/serveurInfo.js"));
 // Commande API tracker Apex legends 
-client.commands_user.set("apex", require("./bot/commands/user/API.js"));
+client.commands_user.set("apex", require("./bot/commands/API/API.js"));
 
 // Lancement des evenements
 client.on("ready", () => require("./bot/events/ready.js")(client));
