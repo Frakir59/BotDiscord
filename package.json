@@ -1,7 +1,7 @@
 {
   "name": "BotFrakir",
-  "version": "0.1.1",
-  "description": "Bot Discord V0.1.1",
+  "version": "0.1.2",
+  "description": "Bot Discord V0.1.2",
   "main": "main.js",
   "script": {
     "strat": "node server",
