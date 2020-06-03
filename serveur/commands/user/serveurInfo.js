@@ -3,6 +3,7 @@ const { MessageEmbed } = require("discord.js");
 
 // Commande info serveur
 module.exports = (client, message) => {
+  message.delete({ timeout: 1000 });
   const embed = new MessageEmbed()
     .setDescription(message.guild.name)
     .setThumbnail(message.guild.iconURL())

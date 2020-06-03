@@ -12,7 +12,7 @@ module.exports = (client, message, args) => {
     app.use(morgan("dev"));
   }
   // Profile
-  app.use("/api/v1/profile", require("./apexlegends/profile"));
+  app.use("/api/v1/profile", require("../apexlegends/profile"));
 
   // On définie le port de connexion
   const port = process.env.PORT || 8000;
