@@ -21,6 +21,4 @@ module.exports = (client, message, args) => {
   app.listen(port, () => {
     console.log(`${process.env.NODE_ENV} fonctionne sur le port: ${port}`);
   });
-
-  // 
 };
